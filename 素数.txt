@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int is_prime(int n)
+{
+	int j = 0;
+	for(j = 2; j < n; j++)
+	{
+		if(n%j == 0)
+		{
+			return 0;
+		}
+	}
+	return 1;
+	
+}
+int main()
+{
+	int n = 0;
+	cin >> n;
+	int ret = is_prime(n); 
+	if(ret == 1)
+	{
+		cout << "prime" << endl;
+	}
+	else
+	{
+		cout << "not prime" << endl;
+	}
+	system("pause");
+}
